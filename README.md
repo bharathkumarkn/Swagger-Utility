@@ -54,7 +54,7 @@ Once you have executed, follow the below option to give the inputs for the Uitit
 > Enter Password for Org :
 
 ###
-Here is the below Successful Api Proxy Generated and Deployed to an Enterprise org as well.
+Here is the below Successful Api Proxy Generated and Deployed to an Enterprise org.
 
 > Executing: POST https://api.enterprise.apigee.com/v1/organizations/apigee-edu/apis?action=import&name=WeatherAPI HTTP/1.1
 [Content-Type: application/octet-stream]
