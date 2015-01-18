@@ -1,8 +1,9 @@
 #Swagger Utility
 ![](http://www.mikestowe.com/wp-content/uploads/2014/05/swagger.png)
 ## Swagger Utility
-Swagger utility is a Java utility for generating API proxies from Swagger. The utility generates Flows for all of the Resources defined in under /Paths and complete proxy bundle for any generic Swager generated for API modelling. 
-This utility will also accept the Swagger Docs which is generated APigee-127, which has policies defined in it, So it looks in each of the resources, and adds policy in APIproxy wherever the policies are applied in swagger.
+Swagger utility is a Java utility for generating API proxies from Swagger API Model. So it is Swagger API Model to API Proxies genrator tool.
+The utility generates Flows for all of the Resources defined in under /Paths and complete proxy bundle for any generic Swager generated for API modelling. 
+This utility will also accept the Swagger yaml files which is generated from Apigee-127, which has policies defined in it using volos elements tags, So it looks in each of the resources, and adds policy for flows in APIproxy wherever the policies are applied under /Paths in swagger.
 Once the API Bundles is created, it has the option to deploy to Enterprise  org.
 Currently The following policies are applied to API proxies.
 1. OAuthV2- Validate Access Token
@@ -15,7 +16,7 @@ In the next version/release of this utility we'll add Cahcing and other features
 
 Clone the Git Repo on your machine, git@github.com:bharathkumarkn/Swagger-Utility.git, and There will be an executable jar.
 Go to the location of the clone on your local machine and locate the Swagger-Util.jar.
-it is a Java util, So make sure you have Java6 JRE installed and configured.
+it is a Java util, So make sure you have Java6 JRE or higher version installed and configured in your machine.
 
 Go to terminal/console. and use this command to run the jar.
 
