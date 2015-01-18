@@ -12,6 +12,7 @@ Currently The following policies are applied to API proxies.
 In the next version/release of this utility we'll add Cahcing and other features of API Management.
 
 ##Using Swagger-Utility
+
 Clone the Git Repo on your machine, git@github.com:bharathkumarkn/Swagger-Utility.git, and There will be an executable jar.
 Go to the location of the clone on your local machine and locate the Swagger-Util.jar.
 it is a Java util, So make sure you have Java6 JRE installed and configured.
@@ -25,7 +26,6 @@ Enter the location of the Yaml file :/Users/bharathkumar/Documents/4G/Utils-Ws/y
 Is this Swagger developed from Apigee-127 Specific (y/n) :y
 Enter the API Proxy Name :WeatherAPI
 Enter the Location for the API Bundle :/Users/bharathkumar/Desktop
-18:24:14.146 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Compressing '/Users/bharathkumar/Desktop/WeatherAPI' into '/Users/bharathkumar/Desktop/WeatherAPI/apiproxy.zip'.
 API Proxy Successfully Generated.Do you want to deploy this API to enterprise(y/n) :y
 Enter the Enterprise URL (Default= https://api.enterprise.apigee.com) :
 Enterprise URL: https://api.enterprise.apigee.com
@@ -34,7 +34,7 @@ Enter the Environment Name :test
 Enter the Username :bharathkumar@apigee.com
 Enter Password for Org :
 
-Here is the below Succesfful Api Proxy Generated and Deployed to Enterprise org as well.
+Here is the below Successful Api Proxy Generated and Deployed to an Enterprise org as well.
 
 Executing: POST https://api.enterprise.apigee.com/v1/organizations/apigee-edu/apis?action=import&name=WeatherAPI HTTP/1.1
 [Content-Type: application/octet-stream]
@@ -53,14 +53,14 @@ Now you have an API Proxy created with all the resouces and policies attached to
 
 ##Contribute
 
-You can find the Source Code of the Utility as well. Please feel free to contribute to the Unitlity.
+You can find the Source Code of the Utility as well. Please feel free to contribute by adding more features and let us know for any feedbacks/bugs in this Utility.
 
 
 ##Licence
 
 All of SweetLime is licensed under the Apache License, Version 2
 
-Copyright (c) 2014 Girish Rangaswamy @ Apigee Corp 
+Copyright (c) 2015 Bharath Kumar @ Apigee Corp 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
