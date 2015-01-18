@@ -25,7 +25,7 @@ it is a Java util, So make sure you have Java6 JRE or higher version installed a
 
 ###Go to terminal/console and use below command to run the jar.
 
-> java -jar Swagger-Util.jar
+> java -jar Swagger-Utility.jar
 
 ###
 Once you have executed, follow the below option to give the inputs for the Uitity to generate and deploy to and Enterprise Org.
