@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="WeatherAPI">
+    <ConfigurationVersion minorVersion="0" majorVersion="4"/>
+    <CreatedAt>1421420594</CreatedAt>
+    <CreatedBy>admin@apigee.com</CreatedBy>
+    <Description></Description>
+    <LastModifiedAt>1421420594</LastModifiedAt>
+    <LastModifiedBy>admin@apigee.com</LastModifiedBy>
+    <Policies/>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>yaml://_SwaggerYaml.yaml</Resource>
+    </Resources>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

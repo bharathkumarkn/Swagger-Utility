@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description></Description>
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+    <Flows>
+        <Flow name="getWeatherByCity_OAuth_Quota">
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/weather_secure&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+            <Description>Returns current weather in the specified city to the caller</Description>
+            <Request>
+                <Step>
+                    <Name>OAuth-v20</Name>
+                </Step>
+                <Step>
+                    <Name>Quota</Name>
+                </Step>
+            </Request>
+            <Response/>
+        </Flow>
+        <Flow name="postNewWeatherByCity">
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/weather_secure&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+            <Description>Returns current weather in the specified city to the caller</Description>
+            <Request>
+                <Step>
+                    <Name>OAuth-v20</Name>
+                </Step>
+                <Step>
+                    <Name>Quota</Name>
+                </Step>
+            </Request>
+            <Response/>
+        </Flow>
+        <Flow name="getWeatherByCity_Quota">
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/weather_quota&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+            <Description>Returns current weather in the specified city to the caller</Description>
+            <Request>
+                <Step>
+                    <Name>Quota</Name>
+                </Step>
+            </Request>
+            <Response/>
+        </Flow>
+        <Flow name="getWeatherByCity_SpikeArrest">
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/weather&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+            <Description>Returns current weather in the specified city to the caller</Description>
+            <Request>
+                <Step>
+                    <Name>Spike-Arrest</Name>
+                </Step>
+            </Request>
+            <Response/>
+        </Flow>
+        <Flow name="getWeatherByCity_Cached">
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/weather_cached&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+            <Description>Returns current weather in the specified city to the caller</Description>
+            <Request/>
+            <Response/>
+        </Flow>
+    </Flows>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <HTTPProxyConnection>
+        <BasePath>/</BasePath>
+        <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>

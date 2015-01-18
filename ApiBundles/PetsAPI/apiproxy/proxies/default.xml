@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description>A sample API that uses a petstore as an example to demonstrate features in the swagger-2.0 specification</Description>
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+    <Flows>
+        <Flow name="addPet">
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/pets&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+            <Description>Creates a new pet in the store.  Duplicates are allowed</Description>
+            <Request/>
+            <Response/>
+        </Flow>
+        <Flow name="findPetById">
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/pets/{id}&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+            <Description>Returns a user based on a single ID, if the user does not have access to the pet</Description>
+            <Request/>
+            <Response/>
+        </Flow>
+        <Flow name="deletePet">
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/pets/{id}&quot;) and (request.verb = &quot;DELETE&quot;)</Condition>
+            <Description>deletes a single pet based on the ID supplied</Description>
+            <Request/>
+            <Response/>
+        </Flow>
+        <Flow name="findPets">
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/pets&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+            <Description>Returns all pets from the system that the user has access to</Description>
+            <Request/>
+            <Response/>
+        </Flow>
+    </Flows>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <HTTPProxyConnection>
+        <BasePath>/api</BasePath>
+        <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>

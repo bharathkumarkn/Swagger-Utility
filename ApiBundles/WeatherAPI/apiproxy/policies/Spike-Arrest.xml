@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SpikeArrest name="Spike-Arrest" enabled="true" continueOnError="false" async="false">
+    <DisplayName>Spike-Arrest</DisplayName>
+    <Rate>10pm</Rate>
+</SpikeArrest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Quota type="calendar" name="Quota" enabled="true" continueOnError="false" async="false">
+    <DisplayName>Quota</DisplayName>
+    <Allow count="2"/>
+    <Interval>1</Interval>
+    <Distributed>false</Distributed>
+    <Synchronous>false</Synchronous>
+    <TimeUnit>minute</TimeUnit>
+    <StartTime>2015-01-16 20:33:14</StartTime>
+</Quota>

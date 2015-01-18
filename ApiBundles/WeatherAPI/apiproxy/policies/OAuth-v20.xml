@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OAuthV2 name="OAuth-v20" enabled="true" continueOnError="false" async="false">
+    <DisplayName>OAuth-v20</DisplayName>
+    <ExternalAuthorization>false</ExternalAuthorization>
+    <Operation>VerifyAccessToken</Operation>
+</OAuthV2>
