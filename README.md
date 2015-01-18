@@ -9,11 +9,11 @@ This utility will also accept the Swagger yaml files which is generated from Api
 Once the API Bundles is created tool has an option to deploy to Enterprise  org.
 Currently the following policies are applied to API proxies.
 ###
-1. OAuthV2- Validate Access Token
+> 1. OAuthV2- Validate Access Token
 
-2. Quota.
+> 2. Quota.
 
-3. SpikeArrest
+> 3. SpikeArrest
 
 In the next version/release of this utility we'll add Cahcing and other features of API Management.
 
@@ -24,48 +24,51 @@ Go to the location of the clone on your local machine and locate the Swagger-Uti
 it is a Java util, So make sure you have Java6 JRE or higher version installed and configured in your machine.
 
 Go to terminal/console. and use this command to run the jar.
-
-java -jar Swagger-Util.jar
+###
+> java -jar Swagger-Util.jar
 Once you have executed, follow the below option to give the inputs for the Uitity to generate and deploy to and Enterprise Org.
 
-Enter the location of the Yaml file :/Users/bharathkumar/Documents/4G/Utils-Ws/yaml-files/WeatherAdvanced.yaml
+###
+> Enter the location of the Yaml file :/Users/bharathkumar/Documents/4G/Utils-Ws/yaml-files/WeatherAdvanced.yaml
 
-Is this Swagger developed from Apigee-127 Specific (y/n) :y
+> Is this Swagger developed from Apigee-127 Specific (y/n) :y
 
-Enter the API Proxy Name :WeatherAPI
+> Enter the API Proxy Name :WeatherAPI
 
-Enter the Location for the API Bundle :/Users/bharathkumar/Desktop
-API Proxy Successfully Generated.Do you want to deploy this API to enterprise(y/n) :y
+> Enter the Location for the API Bundle :/Users/bharathkumar/Desktop
 
-Enter the Enterprise URL (Default= https://api.enterprise.apigee.com) :
+> API Proxy Successfully Generated.Do you want to deploy this API to enterprise(y/n) :y
 
-Enterprise URL: https://api.enterprise.apigee.com
+> Enter the Enterprise URL (Default= https://api.enterprise.apigee.com) :
 
-Enter the Org Name :apigee-edu
+> Enterprise URL: https://api.enterprise.apigee.com
 
-Enter the Environment Name :test
+> Enter the Org Name :apigee-edu
 
-Enter the Username :bharathkumar@apigee.com
+> Enter the Environment Name :test
 
-Enter Password for Org :
+> Enter the Username :bharathkumar@apigee.com
 
+> Enter Password for Org :
+
+###
 Here is the below Successful Api Proxy Generated and Deployed to an Enterprise org as well.
 
-Executing: POST https://api.enterprise.apigee.com/v1/organizations/apigee-edu/apis?action=import&name=WeatherAPI HTTP/1.1
+> Executing: POST https://api.enterprise.apigee.com/v1/organizations/apigee-edu/apis?action=import&name=WeatherAPI HTTP/1.1
 [Content-Type: application/octet-stream]
 
-Executed: POST https://api.enterprise.apigee.com/v1/organizations/apigee-edu/apis?action=import&name=WeatherAPI HTTP/1.1
+> Executed: POST https://api.enterprise.apigee.com/v1/organizations/apigee-edu/apis?action=import&name=WeatherAPI HTTP/1.1
 HTTP/1.1 201 Created
 Response content length: 680
 
-Executing: POST https://api.enterprise.apigee.com/v1/organizations/apigee-edu/apis/WeatherAPI/revisions/1/deployments?action=deploy&env=test HTTP/1.1
+> Executing: POST https://api.enterprise.apigee.com/v1/organizations/apigee-edu/apis/WeatherAPI/revisions/1/deployments?action=deploy&env=test HTTP/1.1
 [Content-Type: application/octet-stream]
 
-Executed: POST https://api.enterprise.apigee.com/v1/organizations/apigee-edu/apis/WeatherAPI/revisions/1/deployments?action=deploy&env=test HTTP/1.1
+> Executed: POST https://api.enterprise.apigee.com/v1/organizations/apigee-edu/apis/WeatherAPI/revisions/1/deployments?action=deploy&env=test HTTP/1.1
 HTTP/1.1 200 OK
 Response content length: 1047
 
-API Proxy WeatherAPI Successfully Generated and Deployed to Enterprise
+> API Proxy WeatherAPI Successfully Generated and Deployed to Enterprise
 
 
 Now you have an API Proxy created with all the resouces and policies attached to it, and you can start adding more features and enhance you APIs by adding more feaures to it.
