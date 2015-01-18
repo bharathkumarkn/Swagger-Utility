@@ -1,5 +1,5 @@
 #Swagger Utility
-![](https://cdn1.iconfinder.com/data/icons/Limon_iContainer/128/Lime.png)
+![](http://www.mikestowe.com/wp-content/uploads/2014/05/swagger.png)
 ## Swagger Utility
 Swagger utility is a Java utility for generating API proxies from Swagger. The utility generates Flows for all of the Resources defined in under /Paths and complete proxy bundle for any generic Swager generated for API modelling. 
 This utility will also accept the Swagger Docs which is generated APigee-127, which has policies defined in it, So it looks in each of the resources, and adds policy in APIproxy wherever the policies are applied in swagger.
