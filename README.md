@@ -23,12 +23,14 @@ Clone the Git Repo on your machine, git@github.com:bharathkumarkn/Swagger-Utilit
 Go to the location of the clone on your local machine and locate the Swagger-Util.jar.
 it is a Java util, So make sure you have Java6 JRE or higher version installed and configured in your machine.
 
-Go to terminal/console. and use this command to run the jar.
-###
+###Go to terminal/console and use below command to run the jar.
+
 > java -jar Swagger-Util.jar
-Once you have executed, follow the below option to give the inputs for the Uitity to generate and deploy to and Enterprise Org.
 
 ###
+Once you have executed, follow the below option to give the inputs for the Uitity to generate and deploy to and Enterprise Org.
+
+
 > Enter the location of the Yaml file :/Users/bharathkumar/Documents/4G/Utils-Ws/yaml-files/WeatherAdvanced.yaml
 
 > Is this Swagger developed from Apigee-127 Specific (y/n) :y
