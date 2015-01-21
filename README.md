@@ -82,7 +82,6 @@ You can find the Source Code of the Utility as well. Please feel free to contrib
 
 ##Licence
 
-All of SweetLime is licensed under the Apache License, Version 2
 
 Copyright (c) 2015 Bharath Kumar @ Apigee Corp 
 
