@@ -75,7 +75,7 @@ public class SwaggerGeneral {
 					
 					
 					jsonArray1 = opsResJsonObj.optJSONArray("produces");
-					jsonArray2 = (JSONArray)opsResJsonObj.get("parameters");
+					jsonArray2 = (JSONArray)opsResJsonObj.optJSONArray("parameters");
 					
 					
 					String[] produces = new String[10];
@@ -85,7 +85,7 @@ public class SwaggerGeneral {
 						}
 					}
 						opsObj.setProduces(produces);
-					
+						if(jsonArray2!=null){
 						for(int i=0;i<jsonArray2.length();i++){
 							JSONObject paramsList = jsonArray2.getJSONObject(i);
 							Iterator paramsItr = paramsList.keys();
@@ -103,6 +103,7 @@ public class SwaggerGeneral {
 								opsObj.setParameters(parameters);		
 									
 							
+						}
 						}
 						opsObj.setProduces(produces);
 						opsObj.setPath(pathsKey);
