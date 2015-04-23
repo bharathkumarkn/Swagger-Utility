@@ -42,6 +42,7 @@ public class SwaggerGeneral {
 		
 		
 		String pathsKey;
+		String operationId;
 		JSONArray jsonArray1;
 		JSONArray jsonArray2;		
 		String operationsKey;
@@ -69,7 +70,9 @@ public class SwaggerGeneral {
 					
 					opsResJsonObj = pathsJsonObj.getJSONObject(operationsKey);
 					opsObj.setDescription(opsResJsonObj.optString("description"));
-					opsObj.setOperationId(opsResJsonObj.getString("operationId"));
+					
+					operationId = opsResJsonObj.optString("operationId");
+					
 					
 					jsonArray1 = opsResJsonObj.optJSONArray("produces");
 					jsonArray2 = (JSONArray)opsResJsonObj.get("parameters");
@@ -103,7 +106,12 @@ public class SwaggerGeneral {
 						}
 						opsObj.setProduces(produces);
 						opsObj.setPath(pathsKey);
-						opsObj.setVerb(operationsKey);							
+						opsObj.setVerb(operationsKey);
+						
+						if(operationId.equalsIgnoreCase("")){
+							operationId = jsonObject.getString("basePath") + pathsKey + ":" + operationsKey;
+						} 					
+						opsObj.setOperationId(operationId);
 						resOps.put(pathsKey+"_"+operationsKey, opsObj);
 				}
 				
