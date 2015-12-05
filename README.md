@@ -1,8 +1,8 @@
 #Swagger Utility
 ![](http://www.mikestowe.com/wp-content/uploads/2014/05/swagger.png)
 ## Swagger Utility
-Swagger utility is a Java utility for generating API proxies from Swagger API Model. So it is Swagger API Model to API Proxies genrator tool.
-The utility generates Flows for all of the Resources defined in under /Paths and complete proxy bundle for any generic Swagger generated for API modelling. 
+Swagger utility is a Java utility for generating Apigee API proxies from Swagger API Model. 
+This utility generates Flows for all of the Resources defined under /Paths and complete Apigee Proxy for any generic Swagger generated for API modelling. 
 This utility will also accept the Swagger yaml files which is generated from Apigee-127, which has policies defined in it using volos elements tags, So it looks in each of the resources, and adds policy for flows in Apiproxy wherever the policies are applied under /Paths in swagger.
 
 ###
@@ -20,7 +20,7 @@ In the next version/release of this utility we'll add Cahcing and other features
 ##Using Swagger-Utility
 
 Clone the Git Repo on your machine, git@github.com:bharathkumarkn/Swagger-Utility.git, and There will be an executable jar.
-Go to the location of the clone on your local machine and locate the Swagger-Util.jar.
+Go to the location of the clone on your machine and locate the Swagger-Util.jar.
 it is a Java util, So make sure you have Java6 JRE or higher version installed and configured in your machine.
 
 ###Go to terminal/console and use below command to run the jar.
@@ -77,19 +77,6 @@ Now you have an API Proxy created with all the resouces and policies attached to
 
 ##Contribute
 
-You can find the Source Code of the Utility as well. Please feel free to contribute by adding more features and let us know for any feedbacks/bugs in this Utility.
-
-
-##Licence
-
-
-Copyright (c) 2015 Bharath Kumar @ Apigee Corp 
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
+You can find the Source Code of the Utility as well. Please feel free to contribute by adding more features and let us know u any feedbacks/bugs in this Utility.
 
   [1]: https://github.com/bharathkumarkn/Swagger-Utility
